@@ -1,0 +1,194 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[top=0.45in, bottom=0.45in, left=0.55in, right=0.85in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{times}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{array}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Resume},
+    pdfpagemode=FullScreen,
+}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0in}
+
+% Custom commands
+
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{6pt}\textbf{#1}\vspace{2pt}\hrule}
+\newcommand{\ressubheading}[4]{
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}
+        \textbf{#1} & \textit{#2} \\
+        \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{2pt}}
+
+\newcommand{\ressection}[1]{\vspace{-2mm}\section*{\textbf{#1}}\vspace{-6mm}\noindent\rule{\textwidth}{0.1pt}}
+
+\begin{document}
+
+%==================== HEADER ====================
+
+\begin{center}
+    \textbf{\LARGE YOUR NAME}\\
+    \vspace{2mm}
+     +91 XXXXX XXXXX \, | \,
+     \href{mailto:your.email@example.com}{your.email@example.com} \, | \,
+     \href{https://linkedin.com/in/your-profile}{LinkedIn} \, | \,
+     \href{https://github.com/yourusername}{GitHub}
+\end{center}
+
+%==================== ABOUT ME ====================
+
+\ressection{ABOUT ME}
+
+Write a concise 2--3 line professional summary about yourself. Mention your degree, area of interest, key technical skills, and the type of opportunities you are looking for. Tailor this section according to the job role you are applying for.
+
+%==================== PROJECT EXPERIENCE ====================
+
+\ressection{PROJECT EXPERIENCE}
+
+\noindent
+\textbf{Project Name} [Tech Stack]
+\href{https://github.com/yourusername/project}{GitHub}
+
+\vspace{-10pt}
+
+\begin{itemize}[leftmargin=*]
+\setlength{\itemsep}{2pt}
+
+\item Briefly describe what the project does and the problem it solves.
+
+\item Mention the technologies, frameworks, APIs, or databases used.
+
+\item Highlight one important feature or measurable achievement of the project.
+
+\end{itemize}
+
+\vspace{-10pt}
+
+\noindent
+\textbf{Project Name} [Tech Stack]
+\href{https://github.com/yourusername/project}{GitHub}
+
+\vspace{-10pt}
+
+\begin{itemize}[leftmargin=*]
+\setlength{\itemsep}{2pt}
+
+\item Explain the purpose of the project.
+
+\item Mention your major contributions and technical implementation.
+
+\item Include any optimization, deployment, or performance improvements if applicable.
+
+\end{itemize}
+
+\vspace{-10pt}
+
+\noindent
+\textbf{Project Name} [Tech Stack]
+\href{https://github.com/yourusername/project}{GitHub}
+
+\vspace{-10pt}
+
+\begin{itemize}[leftmargin=*]
+\setlength{\itemsep}{2pt}
+
+\item Describe the project's objective.
+
+\item Explain the tools, programming languages, or libraries used.
+
+\item Mention the impact, results, or key learning from the project.
+
+\end{itemize}
+
+%==================== SKILLS ====================
+
+\ressection{SKILLS}
+
+\begin{itemize}[leftmargin=*]
+\setlength{\itemsep}{2pt}
+
+\textbf{Programming Languages:} C, C++, Java, Python, JavaScript, TypeScript, SQL\\
+
+\textbf{Frontend:} HTML, CSS, React.js, Next.js, Tailwind CSS, Bootstrap\\
+
+\textbf{Backend:} Node.js, Express.js, FastAPI, Django, Spring Boot\\
+
+\textbf{Databases:} MySQL, PostgreSQL, MongoDB, SQLite\\
+
+\textbf{Tools \& Technologies:} Git, GitHub, Docker, Linux, AWS, Power BI, Excel, Postman, VS Code\\
+
+\textbf{Core Subjects:} Data Structures \& Algorithms, DBMS, Operating Systems, Computer Networks, OOP\\
+
+\end{itemize}
+
+\vspace{-10pt}
+
+%==================== EDUCATION ====================
+
+\ressection{EDUCATION}
+
+\noindent
+\textbf{University Name} \hfill City, Country 
+
+Bachelor of Technology, Your Branch \hfill \textit{Month YYYY -- Month YYYY} 
+
+CGPA: X.XX / 10 
+
+
+\vspace{4pt}
+
+Higher Secondary / Intermediate \hfill \textit{Month YYYY -- Month YYYY} 
+
+Percentage / CGPA: XX\%
+
+\vspace{-10pt}
+
+%==================== ACHIEVEMENTS ====================
+
+\ressection{ACHIEVEMENTS}
+
+\vspace{-10pt}
+
+\begin{itemize}[leftmargin=*]
+\setlength{\itemsep}{-2pt}
+
+\item Mention any hackathon, coding competition, or technical event achievement.
+
+\item Mention coding platform achievements (LeetCode, HackerRank, CodeChef, Codeforces, etc.).
+
+\item Mention scholarships, academic awards, leadership positions, or other recognitions.
+
+\end{itemize}
+
+\vspace{-10pt}
+
+%==================== CERTIFICATES ====================
+
+\ressection{CERTIFICATES}
+
+\vspace{-10pt}
+
+\begin{itemize}[leftmargin=*]
+\setlength{\itemsep}{-2pt}
+
+\item Certification Name -- Issuing Organization
+\href{https://certificate-link.com}{Credential}
+
+\item Certification Name -- Issuing Organization
+\href{https://certificate-link.com}{Credential}
+
+\item Certification Name -- Issuing Organization
+\href{https://certificate-link.com}{Credential}
+
+\end{itemize}
+
+\end{document}
